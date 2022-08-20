@@ -13,15 +13,8 @@ const App = () => {
   
   }
 
-  const connectWallet = async () => {
-  //  try {
-  //   await authenticate({
-  //     provider: "WalletConnect",
-  //     signingMessage:"Auth Requaried",
-  //   });
-  //  } catch (e) {
-  //     console.error(e);
-  //  }
+  const connectWallet = async (e: React.MouseEvent<HTMLButtonElement>) => {
+
   }
 
   return (
