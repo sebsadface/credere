@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css';
 
 const App = () => {
-  //const {isAuthenticated, authenticate} = useMoralis();
-
   const applyForCredit = async (e: React.MouseEvent<HTMLButtonElement>) => {
 
   }
@@ -13,15 +11,8 @@ const App = () => {
   
   }
 
-  const connectWallet = async () => {
-  //  try {
-  //   await authenticate({
-  //     provider: "WalletConnect",
-  //     signingMessage:"Auth Requaried",
-  //   });
-  //  } catch (e) {
-  //     console.error(e);
-  //  }
+  const connectWallet = async (e: React.MouseEvent<HTMLButtonElement>) => {
+
   }
 
   return (
