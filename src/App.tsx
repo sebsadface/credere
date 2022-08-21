@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { useWeb3React } from "@web3-react/core";
 
 const App = () => {
   const applyForCredit = async (e: React.MouseEvent<HTMLButtonElement>) => {

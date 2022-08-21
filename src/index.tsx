@@ -4,13 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Web3ReactProvider } from "@web3-react/core";
+import { ethers } from "ethers";
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const getLibrary = (provider: any) => {
+  const library = new ethers.providers.Web3Provider(provider);
+  library.pollingInterval = 8000; // frequency provider is polling
+  return library;
+};
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <App />
+    </Web3ReactProvider>
   </React.StrictMode>
 );
 
