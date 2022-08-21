@@ -27,8 +27,6 @@ const App = () => {
         Sign in with Lens
       </button>
       <p className="description">This is a cool project.</p>
-      <p className="connectingWallet">Connecting your wallet ...</p>
-      <p className="SignninginwithLens">Signning in with Lens ...</p>
       <button className="applyForCredit" onClick={applyForCredit}>
         Apply for Credit
       </button>
